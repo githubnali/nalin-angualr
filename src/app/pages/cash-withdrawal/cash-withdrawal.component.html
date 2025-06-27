@@ -1,0 +1,22 @@
+<div class="cash-withdrawal-wrapper">
+  <div class="cash-withdrawal-card">
+    <h1><span>NN</span> Nagaraju Nali</h1>
+    <div class="balance-update-container">
+      <p>Your Balance</p>
+      <p>
+        <span>{{ initiaBalance }}</span
+        ><br />
+        In Rupees
+      </p>
+    </div>
+    <h2>Withdraw</h2>
+    <p class="choose-sum">CHOOSE SUM (IN RUPEES)</p>
+    <div class="rupee-btn-container">
+      @for(item of denominationsList; track item.id) {
+      <button (click)="addDenomination(item.value)">
+        {{ item.value }}
+      </button>
+      }
+    </div>
+  </div>
+</div>

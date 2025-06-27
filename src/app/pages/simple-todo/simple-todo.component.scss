@@ -1,0 +1,47 @@
+.simple-todo-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffc2a0;
+    padding: 30px;
+
+    .simple-todo-inner-wrapper {
+        background-color: #ffffff;
+        border-radius: 20px;
+        padding: 30px;
+        width: 80%;
+
+        h1 {
+            text-align: center;
+            color: #ffc2a0;
+        }
+
+        .simple-todo-list li {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+
+            p {
+                font-size: 22px;
+                line-height: 1.25;
+                font-weight: 600;
+            }
+
+            button {
+                color: #ff0b37;
+                background-color: transparent;
+                border: 2px solid #ff0b37;
+                border-radius: 10px;
+                font-size: 18px;
+                font-weight: 600;
+                padding: 10px 15px;
+                cursor: pointer;
+                outline: none; 
+                width: 130px;
+                height: 50px;
+            }
+        }
+
+    }
+}

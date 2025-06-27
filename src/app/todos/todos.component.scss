@@ -1,0 +1,11 @@
+.todos {
+    list-style-type: none;
+    padding: 0;
+    
+    &__item {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+    }
+}

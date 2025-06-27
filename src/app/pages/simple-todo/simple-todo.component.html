@@ -1,0 +1,13 @@
+<div class="simple-todo-wrapper">
+  <div class="simple-todo-inner-wrapper">
+    <h1>Simple Todos</h1>
+    <ul class="simple-todo-list">
+      @for (todo of initialTodosList; track todo.id) {
+      <li>
+        <p>{{ todo.title }}</p>
+        <button (click)="deleteTodo(todo.id)">Delete</button>
+      </li>
+      }
+    </ul>
+  </div>
+</div>

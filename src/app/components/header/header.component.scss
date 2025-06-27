@@ -1,0 +1,53 @@
+header {
+    display: flex;
+    align-items: center;
+    padding-inline: 32px;
+    padding-block: 16px;
+    background-color: transparent; // Transparent header
+    color: #FFFFFF; // White text for better contrast
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: none; // Remove shadow for a cleaner transparent look
+    border-bottom: 1px  solid rgba(0, 0, 0, 0.1); // Subtle border for separation
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50px;
+    max-width: 900px;
+    margin: 30px auto 0; // Center the header with margin
+
+    .header-logo {
+        display: flex;
+        align-items: center;
+        font-size: 24px;
+        font-weight: bold;
+        color: #ffffff;
+        text-decoration: none; // Ensure logo text is visible on transparent background
+        img {
+            height: 30px;
+            margin-right: 10px;
+        } 
+    }
+
+    nav {
+        flex: 1;
+        display: flex;
+        justify-content: center; // Center the navigation links
+        ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+
+            li {
+                cursor: pointer;
+                font-weight: 600;
+                transition: color 0.3s ease; // Smooth color transition on hover
+                &:hover {
+                    color: #FFD700; // Gold color on hover for better visibility
+                }
+            }
+        }
+    }
+
+    
+}

@@ -1,0 +1,28 @@
+<div class="destination-search-wrapper">
+  <h1>Destination Search</h1>
+  <div class="input-container">
+    <input
+      type="search"
+      placeholder="search for destination.."
+      [(ngModel)]="searchTerm"
+    />
+    <img
+      src="https://assets.ccbp.in/frontend/react-js/destinations-search-icon-img.png"
+      alt="search icon"
+      className="search-img"
+    />
+  </div>
+
+  <ul class="destination-list">
+    @for(destination of filteredDestinations; track destination.id) {
+
+    <li class="">
+      <img [src]="destination.imgUrl" [alt]="destination.name" />
+      <p>{{ destination.name }}</p>
+    </li>
+    }
+  </ul>
+  @if (filteredDestinations.length === 0) {
+  <p>No destinations found.</p>
+  }
+</div>
