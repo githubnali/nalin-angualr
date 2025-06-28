@@ -9,15 +9,9 @@ export const routes: Routes = [
         },
     },
     {
-        path: 'api',
+        path: 'assignments',
         loadComponent: () => {
-            return import('./pages/jobby-app/jobby-app.component').then((m) => m.JobbyAppComponent)
-        }
-    },
-    {
-        path: 'tasks',
-        loadComponent: () => {
-            return import('./pages/all-tasks/all-tasks.component').then((m) => m.AllTasksComponent)
+            return import('./pages/assignments/assignments.component').then((m) => m.AssignmentsComponent)
         }
     },
     {

@@ -17,7 +17,7 @@ import { FooterComponent } from './components/footer/footer.component';
     `
       main {
         max-width: 1000px;
-        margin: 0 auto;
+        margin: 50px auto;
       }
     `
   ],

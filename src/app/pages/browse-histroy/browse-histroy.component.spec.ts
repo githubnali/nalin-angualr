@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { JobbyAppComponent } from './jobby-app.component';
+import { BrowseHistroyComponent } from './browse-histroy.component';
 
-describe('JobbyAppComponent', () => {
-  let component: JobbyAppComponent;
-  let fixture: ComponentFixture<JobbyAppComponent>;
+describe('BrowseHistroyComponent', () => {
+  let component: BrowseHistroyComponent;
+  let fixture: ComponentFixture<BrowseHistroyComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [JobbyAppComponent]
+      imports: [BrowseHistroyComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(JobbyAppComponent);
+    fixture = TestBed.createComponent(BrowseHistroyComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

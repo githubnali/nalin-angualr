@@ -1,0 +1,54 @@
+<div class="browse-history-container">
+  <div class="browser-history-top">
+    <img
+      src="https://assets.ccbp.in/frontend/react-js/history-website-logo-img.png"
+      alt="app logo"
+      class="history-logo"
+    />
+    <div class="input-container">
+      <img
+        src="https://assets.ccbp.in/frontend/react-js/search-img.png"
+        alt="search"
+      />
+      <input
+        type="search"
+        placeholder="Search history"
+        onChange="{this.onBrowseSearchInput}"
+        [(ngModel)]="searchHistoryTerm"
+        name="searchHistoryTerm"
+      />
+    </div>
+  </div>
+  @if(filteredHistoryList.length) {
+  <ul class="browser-history-bottom">
+    @for (item of filteredHistoryList; track $index) {
+
+    <li class="each-list-item">
+      <div class="time-logo-section">
+        <p class="access-time">{{ item.timeAccessed }}</p>
+        <div class="history-items">
+          <img [src]="item.logoUrl" alt="domain logo" class="social-icon" />
+          <p>
+            <strong>{{ item.title }}</strong>
+          </p>
+          <p>{{ item.domainUrl }}</p>
+        </div>
+      </div>
+      <button
+        type="button"
+        (click)="deleteHistoryItem(item.id)"
+        data-testid="delete"
+      >
+        <img
+          src="https://assets.ccbp.in/frontend/react-js/delete-img.png"
+          alt="delete"
+        />
+      </button>
+    </li>
+    }
+  </ul>
+  } @if(!filteredHistoryList.length) {
+
+  <p class="no-history">There is no history to show</p>
+  }
+</div>

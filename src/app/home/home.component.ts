@@ -16,39 +16,28 @@ export class HomeComponent {
       id: 1,
       gif: '/assets/img/popular-tasks/destination-search.gif',
       name: 'Destination Search',
-      description: 'Search for the nice destinations',
+      description: 'Search and filter popular destinations by typing keywords dynamically.',
       path: '/destination-search'
     },
     {
       id: 2,
       gif: '/assets/img/popular-tasks/simple-todos.gif',
       name: 'Simple Todos',
-      description: "Let's try delete the todos ",
+      description: "Add, complete, and delete daily tasks using a todo list.",
       path: '/simple-todo'
     },
     {
       id: 3,
       gif: '/assets/img/popular-tasks/cash-withdrawal.gif',
       name: 'Cash Withdrawal',
-      description: "Let's check the cas withdrawal",
+      description: "Withdraw money by selecting denominations with real-time balance",
       path: '/cash-withdrawal'
-    },  {
-      id: 3,
-      gif: '/assets/img/popular-tasks/cash-withdrawal.gif',
-      name: 'Cash Withdrawal',
-      description: "Let's check the cas withdrawal",
-      path: '/cash-withdrawal'
-    },  {
-      id: 3,
-      gif: '/assets/img/popular-tasks/cash-withdrawal.gif',
-      name: 'Cash Withdrawal',
-      description: "Let's check the cas withdrawal",
-      path: '/cash-withdrawal'
-    },  {
-      id: 3,
-      gif: '/assets/img/popular-tasks/cash-withdrawal.gif',
-      name: 'Cash Withdrawal',
-      description: "Let's check the cas withdrawal",
+    }, 
+    {
+      id: 4,
+      gif: '/assets/img/popular-tasks/gsearch-suggestion.gif',
+      name: 'G-Search Suggestions',
+      description: "Display live suggestions as user types, mimicking Google search behavior.",
       path: '/cash-withdrawal'
     },
   ]
