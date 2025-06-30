@@ -23,19 +23,25 @@ export const routes: Routes = [
     {
         path: 'destination-search',
         loadComponent: () => {
-            return import('./pages/destination-search/destination-search.component').then((m) => m.DestinationSearchComponent)
+            return import('./pages/cp/destination-search/destination-search.component').then((m) => m.DestinationSearchComponent)
         },
     },
     {
         path: 'simple-todo',
         loadComponent: () => {
-            return import('./pages/simple-todo/simple-todo.component').then((m) => m.SimpleTodoComponent)
+            return import('./pages/cp/simple-todo/simple-todo.component').then((m) => m.SimpleTodoComponent)
         },
     },
     {
         path: 'cash-withdrawal',
         loadComponent: () => {
-            return import('./pages/cash-withdrawal/cash-withdrawal.component').then((m) => m.CashWithdrawalComponent)
+            return import('./pages/cp/cash-withdrawal/cash-withdrawal.component').then((m) => m.CashWithdrawalComponent)
+        },
+    },
+    {
+        path: 'gsearch-suggestions',
+        loadComponent: () => {
+            return import('./pages/cp/gsearch-suggestions/gsearch-suggestions.component').then((m) => m.GsearchSuggestionsComponent)
         },
     }
     

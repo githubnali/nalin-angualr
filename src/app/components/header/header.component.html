@@ -3,10 +3,20 @@
     <img src="/assets/img/header_logo.svg" alt="let's build" />
     <span>Let's Build</span>
   </a>
-  <nav>
+  <button class="hamburger" (click)="toggleMenu()">
+    &#9776;
+    <!-- Hamburger icon -->
+  </button>
+  <nav [class.open]="isMenuOpen">
+    <button class="close-menu" (click)="toggleMenu()">
+      &times;
+      <!-- Close icon -->
+    </button>
     <ul>
       <li routerLink="/">Home</li>
       <li routerLink="/assignments">Assignments</li>
+      <li routerLink="/about">About</li>
+      <li routerLink="/contact">Contact</li>
     </ul>
   </nav>
   <div>

@@ -38,7 +38,7 @@ export class HomeComponent {
       gif: '/assets/img/popular-tasks/gsearch-suggestion.gif',
       name: 'G-Search Suggestions',
       description: "Display live suggestions as user types, mimicking Google search behavior.",
-      path: '/cash-withdrawal'
+      path: '/gsearch-suggestions'
     },
   ]
   homeMessage = signal('Hello World')

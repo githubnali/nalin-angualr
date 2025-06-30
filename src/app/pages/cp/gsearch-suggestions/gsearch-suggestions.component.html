@@ -1,0 +1,38 @@
+<div class="white-bg">
+  <div class="google-container">
+    <img
+      src="https://assets.ccbp.in/frontend/react-js/google-logo.png"
+      alt="google logo"
+    />
+    <div class="suggestion-container">
+      <div class="input-container">
+        <img
+          src="https://assets.ccbp.in/frontend/react-js/google-search-icon.png"
+          alt="search icon"
+        />
+        <input
+          type="search"
+          placeholder="Search Google"
+          [(ngModel)]="searchTerm"
+          name="searchTerm"
+        />
+      </div>
+      <ul class="ul-container">
+        @for (item of filteredGSuggestions; track $index) {
+        <li class="suggestion-item">
+          <p>{{ item.suggestion }}</p>
+          <button type="button" (click)="onClickSuggestion(item.id)">
+            <img
+              src="https://assets.ccbp.in/frontend/react-js/diagonal-arrow-left-up.png"
+              alt="arrow"
+            />
+          </button>
+        </li>
+        }
+      </ul>
+      @if(!filteredGSuggestions.length) {
+      <p class="no-suggestions">No Suggestions Found</p>
+      }
+    </div>
+  </div>
+</div>

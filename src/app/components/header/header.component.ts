@@ -14,5 +14,9 @@ export class HeaderComponent {
 
   // //data binding using traditional method
   // para = 'This is Traditional Way of Data Binding';
+  isMenuOpen = false;
 
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
 }
