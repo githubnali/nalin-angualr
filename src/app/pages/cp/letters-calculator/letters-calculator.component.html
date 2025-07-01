@@ -1,0 +1,24 @@
+<div class="green-container">
+  <div class="content-container">
+    <div class="letters-container">
+      <h1>Calculate the Letters you enter</h1>
+      <label htmlFor="textInput">Enter the phrase</label>
+      <br />
+      <div class="input-container">
+        <input
+          id="textInput"
+          placeholder="Enter the phrase"
+          type="text"
+          [(ngModel)]="enterInput"
+          (input)="calculateCounts()"
+          name="enterInput"
+        />
+        <p>No.of Letters: {{ wordsCount }}</p>
+      </div>
+    </div>
+    <img
+      src="https://assets.ccbp.in/frontend/react-js/stop-watch-with-calculator-img.png"
+      alt="letters calculator"
+    />
+  </div>
+</div>

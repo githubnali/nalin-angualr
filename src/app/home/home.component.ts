@@ -11,6 +11,8 @@ import { RouterLink } from '@angular/router';
 })
 export class HomeComponent {
 
+  showAllTAsks: boolean = false;
+
   popularTaskList = [
     {
       id: 1,
@@ -40,11 +42,26 @@ export class HomeComponent {
       description: "Display live suggestions as user types, mimicking Google search behavior.",
       path: '/gsearch-suggestions'
     },
+    {
+      id: 5,
+      gif: '/assets/img/popular-tasks/letters-cal.gif',
+      name: 'Letters Calculator',
+      description: "Calculate the number of letters in a given text, updating dynamically.",
+      path: '/letters-calculator'
+    },
   ]
-  homeMessage = signal('Hello World')
+  // homeMessage = signal('Hello World')
 
-  keyUpHAndler(event: KeyboardEvent) {
-    console.log(`user pressed ${event.key}`)
+  // keyUpHAndler(event: KeyboardEvent) {
+  //   console.log(`user pressed ${event.key}`)
+  // }
+
+  get visibleTaskList() {
+    return this.showAllTAsks ? this.popularTaskList : this.popularTaskList.slice(0, 3);
+  }
+
+  toggleShowAll() {
+    this.showAllTAsks = !this.showAllTAsks;
   }
 }
 

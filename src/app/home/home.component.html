@@ -13,7 +13,7 @@
   </div>
 
   <ul class="popular-card-container">
-    @for (card of popularTaskList; track card.id) {
+    @for (card of visibleTaskList; track card.id) {
 
     <li [routerLink]="`${card.path}`">
       <img [src]="card.gif" [alt]="card.name" />
@@ -23,5 +23,9 @@
     </li>
     }
   </ul>
-  <button class="secondary-btn load-more">Load More</button>
+  @if(!showAllTAsks) {
+  <button class="secondary-btn load-more" (click)="toggleShowAll()">
+    Load More
+  </button>
+  }
 </section>

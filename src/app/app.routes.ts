@@ -43,6 +43,12 @@ export const routes: Routes = [
         loadComponent: () => {
             return import('./pages/cp/gsearch-suggestions/gsearch-suggestions.component').then((m) => m.GsearchSuggestionsComponent)
         },
+    },
+    {
+        path: 'letters-calculator',
+        loadComponent: () => {
+            return import('./pages/cp/letters-calculator/letters-calculator.component').then((m) => m.LettersCalculatorComponent)
+        }
     }
     
 ];
