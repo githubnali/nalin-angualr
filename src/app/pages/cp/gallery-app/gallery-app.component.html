@@ -1,0 +1,29 @@
+<div class="gallery-bg">
+  <div class="gallery-container">
+    <img
+      [src]="selectedInitialtObj.imageUrl"
+      [alt]="selectedInitialtObj.imageAltText"
+      class="active-img"
+    />
+    <h1 class="nature-heading">Nature Photography</h1>
+    <p class="nature-para">Nature Photography by Nagaraju Nali</p>
+    <ul class="thumbnail-gallery">
+      @for(item of imagesList; track item.id) {
+      <li>
+        <button
+          type="button"
+          class="thumbnail-btn"
+          (click)="onThumbnailClick(item)"
+        >
+          <img
+            [src]="item.thumbnailUrl"
+            [alt]="item.thumbnailAltText"
+            class="thumbnail-img"
+            [class.active]="item.id === selectedInitialtObj.id"
+          />
+        </button>
+      </li>
+      }
+    </ul>
+  </div>
+</div>

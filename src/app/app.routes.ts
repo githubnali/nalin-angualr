@@ -49,6 +49,12 @@ export const routes: Routes = [
         loadComponent: () => {
             return import('./pages/cp/letters-calculator/letters-calculator.component').then((m) => m.LettersCalculatorComponent)
         }
+    },
+    {
+        path: 'gallery-app',
+        loadComponent: () => {
+            return import('./pages/cp/gallery-app/gallery-app.component').then((m) => m.GalleryAppComponent)
+        }
     }
     
 ];

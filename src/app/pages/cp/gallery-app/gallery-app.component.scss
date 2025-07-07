@@ -1,0 +1,54 @@
+.gallery-bg {
+    display: flex;
+    background-color: #ffffff;
+    align-items: center;
+    justify-content: center;
+
+    .gallery-container {
+        max-width: 900px;
+        margin: 30px auto;
+    
+        .active-img {
+            max-width: 500px;
+            height: auto;
+        }
+        .nature-heading {
+            font-size: 22px;
+            color: #1e293b;
+            margin: 10px 0;
+        }
+        
+        .nature-para {
+            font-size: 14px;
+            color: #64748b;
+            margin-bottom: 20px;
+        }
+        
+        .thumbnail-gallery {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            gap: 10px;
+
+            .thumbnail-btn {
+                background-color: unset;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                padding: 0;
+            }
+            
+            .thumbnail-img {
+                width: 40px;
+                height: 40px;
+                opacity: 0.5;
+            }
+            
+            .active {
+                opacity: 1;
+            }
+        }
+    }
+  }
+  
+  

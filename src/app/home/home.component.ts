@@ -49,6 +49,13 @@ export class HomeComponent {
       description: "Calculate the number of letters in a given text, updating dynamically.",
       path: '/letters-calculator'
     },
+    {
+      id: 6,
+      gif: '/assets/img/popular-tasks/gallery-app.gif',
+      name: 'Gallery App',
+      description: "Browse and view images in a gallery format with thumbnails.",
+      path: '/gallery-app'
+    },
   ]
   // homeMessage = signal('Hello World')
 
